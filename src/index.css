@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+* {
+    font-size: 22px;
+}
+
+body {
+    margin: 0;
+    /* background-color: rgb(127, 187, 255); */
+
+}
+
+
+/* form div {
+    flex: 1 0 auto;
+    margin: 0.2rem 5%;
+} */
+
+
+:root {
+    --shadow-color: 180deg 6% 55%;
+    --shadow-elevation-low:
+        0.3px 0.5px 0.7px hsl(var(--shadow-color) / 0.3),
+        0.4px 0.8px 1px -1.1px hsl(var(--shadow-color) / 0.33),
+        1px 2px 2.6px -2.2px hsl(var(--shadow-color) / 0.35);
+    --shadow-elevation-medium:
+        0.3px 0.5px 0.7px hsl(var(--shadow-color) / 0.31),
+        0.9px 1.7px 2.3px -0.7px hsl(var(--shadow-color) / 0.34),
+        2.1px 4.2px 5.5px -1.5px hsl(var(--shadow-color) / 0.36),
+        5px 10px 13.1px -2.2px hsl(var(--shadow-color) / 0.38);
+    --shadow-elevation-high:
+        0.3px 0.5px 0.7px hsl(var(--shadow-color) / 0.33),
+        1.8px 3.6px 4.7px -0.4px hsl(var(--shadow-color) / 0.35),
+        3.4px 6.9px 9px -0.7px hsl(var(--shadow-color) / 0.36),
+        5.9px 11.8px 15.4px -1.1px hsl(var(--shadow-color) / 0.37),
+        9.8px 19.6px 25.6px -1.5px hsl(var(--shadow-color) / 0.39),
+        15.9px 31.7px 41.5px -1.8px hsl(var(--shadow-color) / 0.4),
+        24.8px 49.5px 64.8px -2.2px hsl(var(--shadow-color) / 0.41);
+}
+
+.sombrita {
+    box-shadow: var(--shadow-elevation-high);
+}
