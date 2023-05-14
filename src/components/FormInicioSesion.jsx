@@ -3,21 +3,27 @@ import "../index.css";
 import { motion } from "framer-motion";
 import Alert from "./Alert";
 import Cargando from "../components-principales/Cargando";
+import { useNavigate } from "react-router-dom";
 
 const FormInicioSesion = () => {
   const [usuario, setUsuario] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState(null);
   const [recuerdame, setRecuerdame] = useState(false);
+  const navigate = useNavigate();
 
   const [loading, setLoading] = useState(false);
-
   const handleIngresar = () => {
     setLoading(true);
 
     // Simula una carga de datos
     setTimeout(() => {
       setLoading(false);
+
+      if (usuario === "usuario" && password === "usuario") {
+        navigate("/home");
+        console.log("Usuario Validado");
+      }
     }, 2000);
   };
 
@@ -48,12 +54,12 @@ const FormInicioSesion = () => {
       return;
     }
 
-    console.log("Usuario Validado");
-
-    // Reiniciar los campos del formulario
     setUsuario("");
     setPassword("");
+    setError(null);
     setRecuerdame(false);
+
+    // Reiniciar los campos del formulario
   };
 
   const centrar = {
@@ -91,8 +97,9 @@ const FormInicioSesion = () => {
             textAlign: "center",
             ...centrar,
             top: "60%",
+            color: "#00A8E8",
           }}
-          className=" text-2xl text-sky-400 capitalize"
+          className=" text-2xl capitalize"
         >
           Inicia Sesión
         </h2>
@@ -179,8 +186,13 @@ const FormInicioSesion = () => {
           </label>
           <a
             href="#"
-            style={{ position: "absolute", left: "50%", width: "40%" }}
-            className="text-blue-500 hover:underline"
+            style={{
+              position: "absolute",
+              left: "50%",
+              width: "40%",
+              color: "#00A8E8",
+            }}
+            className="hover:underline"
           >
             Olvidé mi Contraseña
           </a>

@@ -44,3 +44,12 @@ body {
 .sombrita {
     box-shadow: var(--shadow-elevation-high);
 }
+
+
+.active {
+    background-color: rgba(155, 197, 61, 0.8);
+    border-radius: 8px;
+    box-shadow: 0 0 4px rgba(155, 197, 61, 0.4);
+    /* margin: 10%; */
+    /* Otros estilos para resaltar el botón */
+}

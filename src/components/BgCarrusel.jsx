@@ -59,7 +59,7 @@ function BgCarrusel() {
         />
       </AnimatePresence>
       <Letras />
-      <Header />
+      {/* <Header /> */}
     </div>
   );
 }

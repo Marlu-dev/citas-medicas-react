@@ -3,8 +3,9 @@ import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./index.css";
 import Inicio from "./components-principales/Inicio";
-import Header from "./components/Header";
 import Home from "./components-principales/Home";
+import Pagina2 from "./components-principales/Pagina2";
+import Pagina3 from "./components-principales/Pagina3";
 
 const router = createBrowserRouter([
   {
@@ -14,6 +15,16 @@ const router = createBrowserRouter([
   {
     path: "/home",
     element: <Home />,
+  },
+
+  {
+    path: "/pagina2",
+    element: <Pagina2 />,
+  },
+
+  {
+    path: "/pagina3",
+    element: <Pagina3 />,
   },
 ]);
 

@@ -9,13 +9,17 @@ const BotonUsuario = ({ nombreUsuario, imagenUsuario }) => {
           src={imagenUsuario}
           alt="Imagen de usuario"
           className="w-full h-full rounded-full"
+          style={{ borderWidth: "3px", borderColor: "#00A8E8" }}
         />
       </div>
-      <div className="hidden lg:w-3/6 lg:flex-grow lg:flex lg:items-center lg:justify-center">
+      <div
+        style={{ color: "#004B87", fontWeight: "600" }}
+        className="hidden lg:w-3/6 lg:flex-grow lg:flex lg:items-center lg:justify-center"
+      >
         {nombreUsuario}
       </div>
       <div className="hidden lg:w-1/6 lg:flex-grow lg:flex lg:items-center lg:justify-center">
-        <IconLayoutNavbarExpand stroke={1} size={48} />
+        <IconLayoutNavbarExpand stroke={2} size={48} color="#00A8E8" />
         {/* <button className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded">
           Perfil
         </button>

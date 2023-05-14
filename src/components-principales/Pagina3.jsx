@@ -1,8 +1,8 @@
 import React from "react";
 import Navbar from "../components/Navbar";
 import BarraLateral from "../components/BarraLateral";
-import Citas from "../components/Citas";
-const Home = () => {
+
+const Pagina3 = () => {
   return (
     <div
       style={{
@@ -15,9 +15,8 @@ const Home = () => {
     >
       <Navbar />
       <BarraLateral />
-      <Citas />
     </div>
   );
 };
 
-export default Home;
+export default Pagina3;

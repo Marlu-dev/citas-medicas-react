@@ -39,9 +39,10 @@ const BtnHover = ({ icono, nombre }) => {
       {hover && (
         <motion.span
           className="ml-2"
-          variants={spanVariants}
           initial="hidden"
-          animate="visible"
+          animate={{ x: 10, opacity: 1 }}
+          variants={spanVariants}
+          style={{ color: "#004B87", fontWeight: "600" }}
         >
           {nombre}
         </motion.span>

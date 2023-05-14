@@ -5,7 +5,7 @@ const Citas = () => {
   return (
     <div className="flex flex-col h-4/6 w-full overflow-y-auto items-center lg:h-full lg:w-5/6 lg:right-0 fixed">
       <br />
-      <h3>Citas Próximas</h3>
+      <h3 style={{ color: "#004B87", fontWeight: "600" }}>Citas Próximas</h3>
       <Cartilla
         citaMedica="CM10123"
         especialidad="Cardiología"
