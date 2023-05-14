@@ -13,7 +13,14 @@ const Navbar = () => {
     <nav className="h-20">
       <div className="flex h-20">
         <div className="w-2/6 border-b-2 border-t-2  border-neutral-300 lg:w-1/6   lg:order-first">
-          LOGO
+          <div className="w-full h-full overflow-hidden items-center justify-center">
+            <img
+              style={{ scale: "0.7" }}
+              src="https://i.ibb.co/t8mfK9d/logo-s.png"
+              alt=""
+              className="m-auto"
+            />
+          </div>
         </div>
         <div className="flex flex-row border-2 border-neutral-300 w-2/6 lg:w-4/6">
           <BtnHover

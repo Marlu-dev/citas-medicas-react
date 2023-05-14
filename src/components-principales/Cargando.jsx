@@ -15,7 +15,7 @@ const Cargando = () => {
         }}
       >
         <img
-          src="../../src/assets/logo/profile.jpg"
+          src={"https://i.ibb.co/t8mfK9d/logo-s.png"}
           alt="Cargando..."
           className="loading-image"
         />
