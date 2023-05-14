@@ -20,10 +20,30 @@ const FormInicioSesion = () => {
     setTimeout(() => {
       setLoading(false);
 
-      if (usuario === "usuario" && password === "usuario") {
+      if (!usuario.trim()) {
+        console.log("Ingrese un usuario");
+        setError("Ingrese un usuario válido");
+        return;
+      }
+
+      if (!password.trim()) {
+        console.log("Ingrese un passsword");
+        setError("Ingrese un password");
+        return;
+      }
+
+      if (usuario !== "hualas" || password !== "tocino") {
+        setError("Usuario Invalido");
+        return;
+      } else {
         navigate("/home");
         console.log("Usuario Validado");
       }
+
+      setUsuario("");
+      setPassword("");
+      setError(null);
+      setRecuerdame(false);
     }, 2000);
   };
 
@@ -41,24 +61,6 @@ const FormInicioSesion = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
-    if (!usuario.trim()) {
-      console.log("Ingrese un usuario");
-      setError("Ingrese un usuario válido");
-      return;
-    }
-
-    if (!password.trim()) {
-      console.log("Ingrese un passsword");
-      setError("Ingrese un password");
-      return;
-    }
-
-    setUsuario("");
-    setPassword("");
-    setError(null);
-    setRecuerdame(false);
-
     // Reiniciar los campos del formulario
   };
 
