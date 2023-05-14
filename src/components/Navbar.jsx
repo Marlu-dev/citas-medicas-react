@@ -32,7 +32,7 @@ const Navbar = () => {
         <div className="w-2/6 border-r-2 border-t-2 border-b-2 border-neutral-300 order-first lg:w-1/6   lg:order-last">
           <BotonUsuario
             nombreUsuario="John Doe"
-            imagenUsuario="../../src/assets/logo/profile.jpg"
+            imagenUsuario="https://randomuser.me/api/portraits/women/86.jpg"
           />
         </div>
       </div>
