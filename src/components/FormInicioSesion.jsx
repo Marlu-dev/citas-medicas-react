@@ -94,14 +94,20 @@ const FormInicioSesion = () => {
           top: "0%",
         }}
       >
+        <img
+          style={{ scale: "0.7" }}
+          src="https://i.ibb.co/t8mfK9d/logo-s.png"
+          alt=""
+          className="m-auto h-4/6"
+        />
         <h2
           style={{
-            textAlign: "center",
-            ...centrar,
-            top: "60%",
+            // textAlign: "center",
+            // ...centrar,
+            // top: "60%",
             color: "#00A8E8",
           }}
-          className=" text-2xl capitalize"
+          className=" text-2xl capitalize h-2/6 m-auto text-center"
         >
           Inicia Sesión
         </h2>
